@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>Login form</h1>
+
+    <!-- form is just a way for collection of date, so need to specify which data thats why we use input tag here which also customise according to "TYPE" of data eg email,passord,date,telNo.,URL,Checkbox, radio, file, month, color etc No need to learn all of them just search them when reqd. on mdn -->
+
+<!-- Label tag is just used to add text before input box & "for" attribute is used to describe which "input" it is created for so that we don't get confuse when threr are ,multiple labels  -->
+
+    <!-- explore textarea as it is used inside label to adjust size of box, I think it has nothing to do with input and it is just used wothout input tag and used during feedback, see commented example in end of last form -->
+
+    <form > 
+        <label for="email">
+            email:
+            <input placeholder="test" type="text" name="email">
+            <!-- "OR" <input placeholder="test" type="email" name="email"> -->
+        </label>
+        <label for="password">
+            password:
+            <input placeholder="enter your password" type="password" name="password" id="">
+        </label>
+        <button type="login">submit</button>
+                        <!-- "OR" -->
+        <button type="reset">reset</button>
+    </form>
+
+    <!-- Button always comes at the end of form but it must be inside form tag  -->
+
+    <div>
+        <h2>Learning form</h2>
+        <form >
+            <label for="Games">
+                Basketball: <input type="checkbox" name="" id="">
+            </label>
+            <!-- Perfect eg where multiple labels are there but created for same thing ie games, so "for" in label just removes confusion  -->
+            <label for="Games">
+                <select name="Games" id="">
+                    <option value="Cricket">Cricket</option>
+                    <option value="Baseball">Baseball</option>
+                    <!-- select is used to add drawer in form  -->
+                </select>
+            </label>
+            <label for="month">
+                <input type="color" name="" id="">
+            </label>
+            <button type="submit">submit</button>
+            
+            <!-- <textarea placeholder="arshdeep" name="FEEDBACK ARSH" id=""></textarea> -->
+
+            <!-- ctrl  +  Space is used to see whole list available in input's "TYPE"  -->
+
+            <!-- Placeholder is an attribute that can be used in all inputs & it displays a semi transparent text which is used to tell user what he must enter in that input box, it disappears as user start typing  -->
+
+            <!-- So html is majorly used for either collection of data in forms or tables AND displaying of data  -->
+            
+        </form>
+    </div>
+
+
+</body>
+</html>
