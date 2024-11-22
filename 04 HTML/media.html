@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <h1>This is media learning</h1>
+    <img
+      src="./images/hc.png"
+      title="Hitesh"
+      width="200px"
+      alt="profile photo"
+    />
+    <p>Hitesh</p>
+
+    <!-- In img tag, src means source & alt means alternative text so that it will be displayed if img fails to load  -->
+    <!-- Title attribute also works when you hover on img  -->
+
+    <!-- No Above eg is normal way of using img tag, But below is w.r.t how semantics say we should use img tag, ie by using figure tag which acts as a container & figcaption which displays text below just like we used p tag in above eg  -->
+
+    <figure>
+      <img
+        src="images/hc.png"
+        alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth"
+        width="200"
+      />
+
+      <figcaption>
+        A T-Rex on display in the Manchester University Museum.
+      </figcaption>
+    </figure>
+
+    <!-- To use video tag we have to add some additional attribute which is controls so that we can get play/pause optiom, we can also add  controlslist="noremoteplayback " or  controlslist="nodownload noremoteplayback " to forbid video download and etc etc things on video  -->
+
+    <video
+      src="./images/chai_pe_charcha-1080.mp4"
+      width="400px"
+      controls
+      controlslist="noremoteplayback "
+    ></video>
+
+    <!-- Learn ARIA Tags on MDN, But not very imp. -->
+    <!-- Which ARIA attribute is used to define a landmark region in a web page?  -->
+    <!-- What does action attribute in html form do   -->
+
+ <!-- Create a Hyperlink that Opens in a New Tab
+Task: Create a hyperlink to "https://www.wikipedia.org" that opens in a new browser tab when clicked.
+
+Instructions:
+
+Use the <a> tag to create the hyperlink.
+
+Use the target="_blank" attribute to ensure the link opens in a new tab. -->
+
+<!-- Task: Create a simple progress bar with a label that shows 70% completion.
+
+Instructions:
+
+Use the <progress> tag to create the progress bar.
+
+Set the value attribute to 70 and the max attribute to 100. -->
+
+<!--Add your HTML code here-->
+<div><progress max="100" value="70"></progress></div>
+
+<label for="progress">Progress:</label>
+        <progress id="progress" value="70" max="100">70%</progress>
+
+
+  </body>
+</html>

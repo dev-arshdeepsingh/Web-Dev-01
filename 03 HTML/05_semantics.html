@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- What is UTF  -->
+    <!-- two of the most famous global attributes are id and class  -->
+    <!-- we used to use divs but with html5 we use semantics ie headers, footers etc these all also behaves like divs  -->
+    <!-- div, header, footer , nav etc are container tags. all except div increases code readability. so use them instead of divs  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gym workout</title>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <!-- hgroup is a rarely used tag, it just groups heading tags ie h1 to h6 in 1 tag not imp.  -->
+        <h1>Learn to create websites</h1>
+        <h2>You can learn with hitesh and build your own websites</h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <!-- Article tag is used to write content to be displayed on website, it is divided into section tags but only god knows why  -->
+      <hgroup>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h3><time datetime="2024-08-02">August 2nd</time></h3>
+        <!-- we can have a time tag but it also does nothing, also it is static ie date remains same -->
+      </hgroup>
+
+      <section>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nulla
+          voluptatibus deleniti aspernatur similique quos odio sequi iure
+          officiis fugit.
+        </p>
+      </section>
+
+      <!-- Section tag represents content ie p tag etc  -->
+
+      <section>
+        <code>console.log("hitesh")</code>
+        <!-- This code is also used to display code on web page but we use this tag so that VS code can ignore it & it can only be diplayed on website  -->
+      </section>
+    </article>
+
+    <footer>
+      <address>add your address here</address>
+      <!-- In this tag we put anchor tags which include direct link of our mail & Ph. No.  -->
+      <p>&copy; chaicode 2024</p>
+      <!-- "&copy" is used to add copyright logo, we can find these special character logos of html on internet and we we see vs code recomended ones by just typing "&" , This logos are functionality of encoding in UTF8 however nowadays browsers are also smart enough to recognise this even without utf8  -->
+    </footer>
+  </body>
+</html>
