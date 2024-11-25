@@ -1,0 +1,40 @@
+CSS:- Cascading Style sheets
+eg: Moving button on center, right, left of screen etc. & also changing its color etc
+But nowadays we dont have to write it from scratch, there exists a pre wriiten code eg: for navigation bar etc & we just have to customise it. These are called CSS libraries or Framework eg:- Bootstrap, Materialize CSS, Tailwind CSS(Recommendded for beginner), Shadcn, Aceternity, magicUI, daisyUI, flowbite(coorporate love it), MUI, antdesign(coorporate love it) etc.
+
+Dont scare from CSS, It's all on google.
+
+We will learn how to edit each component on website, but at the end of the day we are gonna use Frameworks
+
+Advice:
+01. Firstly focus on font, as it consumes most space on webpage. It genuinly changes the feel.
+02. Second, is which images are used and how they are placed on webpage.
+03. Third and at last focus on components ie how button, list, card looks like.
+
+* Cascading means the flow of style that how styling was applied on upper element & how it cascades to lower elements.
+
+We can use CSS in 3 ways:
+01. Inline: We add styles to individual html tags, Using a global attribute called (Styles = ""). Then we use CSS properties inside this attribute eg: 
+ <h1 style="color:orangered;">   HELLO WORLD   </h1>
+
+02. Using Head Tag: In this also we don't have to create a separate CSS file, as we can add styles inside head tag using style tag. And then name html tag to be styled with curly braces & us CSS propertiesinside it.
+Eg: <head>
+            <style>
+                h2{
+                color: brown;
+                 }
+            </style>
+    </head>
+
+03. Using separate CSS File: It is better way as it is easy to manage and manipulate, However it too has its own advantages and disadvantages.
+here we create new file in same folder with name Name.css (eg: style.css), then we have to link it in html inside head tag using link tag ie 
+<link rel="stylesheet" href="sty.css(FILE NAME)">
+
+
+NOW PRIORITY ORDER IN CASE WE USE ALL THESE TYPES ON 1 HTML FILE THEN PRIORITY ORDER WILL BE:-
+
+
+
+
+
+
