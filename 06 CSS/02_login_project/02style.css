@@ -1,0 +1,101 @@
+body{
+    background-color: #1a1a1a;
+    margin: 0;
+    /* use it everytime as sometimes browser adds its own margins which we do not want. We can add it whenver we want to */
+    height: 100vh;
+
+
+     /* vh is VIEWPORT HEIGHT but if we add in pixels(eg: 400px) then if we use algin-items: center then it will be center of that 400px, in vh it looks more aligned. 100vh means 100% viewheight*/
+    /* this is viewport height which auto edit itself whenever different screen is viewed, Now we can use flexbox. Flexbox is a display property which helps us to move the elements much more faster and easier */
+
+    /* Lets use flex */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* It will decide font on our webpage  */
+}
+
+
+.card{
+    /* background-color: #2c2c2c; */
+    background-color: #d5d4d4;
+
+    border-radius: 8px;
+    /* This will add round edges to our div box */
+
+    padding: 30px;
+    /* Padding is space on borders from inside  */
+
+    width: 300px;
+    /* width of div box  */
+
+    }
+
+h2{
+    /* color: #1a1a1a; */
+    color: #2862aa;
+    /* it will be color of font in h2  */
+
+    text-align: center;
+    /* It will center the text in h2  */
+
+    margin-bottom: 20px;
+    /* It is space below h2 tag  */
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* It will make it look better as it will enhance column, Comment this form wali CSS see before and After look  */
+
+    /* flex-direction: column-reverse; Just for fun  */
+
+    /* gap: 10px;
+    This adds gaps b/w columns  */
+}
+
+input {
+
+    margin-bottom: 15px;
+    /* Here, we just found alternate of gap prpoperty  */
+
+    padding: 10px;
+    /* It is inner breathing space  */
+
+    border-radius: 10px;
+    /* Adding curves at border but this time for input tags  */
+
+    background-color: #d8d8d8;
+
+    border: 2px solid black;
+    /* This will edit borders, but the default also looks nice, comment this prop. to see default  */
+
+
+}
+
+button {
+
+    background-color: #2862aa;
+    /* Keeping it same as color in h2 tag  */
+
+
+    color: #fff;
+
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+button:hover {
+    background-color: #0741ac;
+}
+
+/* Now our 1st project is ready, now if we change background color in body to an image, then this login will look even better */
+
+/* Assignment01: Make signup page  */
