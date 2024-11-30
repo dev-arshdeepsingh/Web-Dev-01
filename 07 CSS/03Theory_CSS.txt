@@ -1,0 +1,27 @@
+Selectors : used to select the elements on webpage
+
+CSS is generally created using tailwind in professional world
+
+Eg of selectors is classes, DOM is used to load a webpage in html in browser successfully
+
+Selectors are majorly used in DOM
+
+
+Border Box:- It is a box sizing which will be discussed later
+
+Margin is distance b\w upper element and lower element, when we apply margin distance between tags gets increased or decreased but the size of content inside the element remains same.
+
+padding is space inside an element if we apply padding size of content inside that element gets small 
+
+we use hash codes or hex code to choose colors however there are other ways also like rgb etc 
+We don't write color names directly because red for 1 browser maybe different for other browser.
+
+(//Parenthesis)
+[//Brackets]
+{//Braces}
+
+Pseudo class is used to add addtional properties like colors on hover
+
+But only id and classes are imp, for rest we use tailwind.
+
+Q: What is Text Decoration?
