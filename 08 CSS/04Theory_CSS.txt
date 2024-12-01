@@ -1,0 +1,30 @@
+Box Model is a way to go to Tailwind, CSS. It should be default for every browser but for now we have to define it explicitely
+
+Box-Sizing: Border-Box will make the box of constant size i.e in case we apply padding it will be applied in such a way that it does'nt changes defined box size but it will manipulate the content size
+
+
+DEFAULT IS CONTENT-BOX
+
+"Differnece between content-box & border=box is that cause when u set height =300px then in contebt-box it is not 300px cause we have to add padding & border but in Border-Box it is guaranteed 300px even after we add padding and border to it & that's why everyone loves it."
+
+
+ border-box = size of content + padding + border
+
+In the above scenario,
+
+
+width = width of content
+
+
+border-box width = width of content + left padding + right padding + left border + right border
+
+"when using box-sizing : content-box; the content size remain same while border-box size grows as padding and border grow. but when using box-sizing: border-box; , the size of border-box remains same while size of content decreases as padding and border grow."
+
+Inline vs Block Elements
+"use "display: inline/block" to convert their inline/block behaviour"
+
+Inline element takes as much space as it is reqd. by the content in that element.
+
+Block element element consumes whole space from left to right of the screen
+
+The Box Model consist of Content + padding + border + Margin
