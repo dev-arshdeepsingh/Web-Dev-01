@@ -1,0 +1,24 @@
+Pseudo Element:   (::) - This symbol creates a pseudo element,Eg: ::after is the last child of selected element & used to add styles in that tag.So this :: adds a new elemnt of inline nature. See .ribbon example on this link: https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+
+p::after{
+    content: "Hello";
+    color: yellow;
+    background-color: Black;
+}
+(the above eg won't effect p tag, It will only create a text hello with applied css after the end of p tag)
+
+
+Learn about transform & transition property as these properties are crazy to use, see video No. 31 from time 20:00 to 29:00
+
+
+
+
+
+
+
+
+
+
+
+
+Note: Navigation bar is made up of ul element 

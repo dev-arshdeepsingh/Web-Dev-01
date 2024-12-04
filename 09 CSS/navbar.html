@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar Variations</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #242424;
+        color: #fff;
+      }
+      .nav-container {
+        margin-bottom: 40px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      .nav1 {
+        /* border: 2px solid red; "This temporary border is applied so that on live server I can know what area I am editing" */
+        background-color: #eaeaea;
+        padding: 10px;
+      }
+      .nav1 ul {
+        list-style-type: none;
+        /* This will remove whitw dot with list  */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* flex will align everything and convert the ul from block to flex  */
+        justify-content: space-around;
+        /* "It will create space b/w li tags"  */
+        align-items: center;
+        /* The above 2 properties are part of flex  */
+      }
+      .nav1 li {
+        /* That's why we don't use child selectors individually cause we can use descendent selector */
+        display: inline;
+      }
+      .nav1 a {
+        text-decoration: none;
+        /* It adds, removes underline */
+        color: #202020;
+        /* background-color: #d45b04; */
+        padding: 5px 15px;
+        position: relative;  /*IMP & will be used in next selector else we will see error in position of content in next selector*/
+        /* This position is mentioned  for below .nav1 a::after{} property, so that it can get this "a" tag as its parent instead of body */
+      }
+
+      .nav1 a::after {
+        /* "Here we want the below the CSS to apply after "a" tag " */
+        /* NOTE: SEE VIDEO NO. 21 FROM 20:00 TO 29:00 IN CASE OF DOUBT  */
+        content: "";
+        /* As there is no content inside it so it will mention it as an underline  */
+        position: absolute;
+        /* absolute means we are giving position ie now it won't appear at end due to ::after  */
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        /* The above parameters are defining absolute position of content w.r.t "a" tag not whole page as mentioned in .nav a{} property */
+        background-color: #0a65c7;  /* content color */
+        transform: scaleX(0);   /* Underline will start from X=0 */     
+        transition: transform 0.3s ease-in-out;  /* Underline animation timing */
+         /* Result is an underline animation is created  */
+      }
+      .nav1 a:hover::after {
+        /* here, we want the following CSS only on hover && after of "a" tag (I also don't know what's going on) */
+        transform: scaleX(1);  /* Underline will go till X=1 */
+      }
+
+      .nav1 .login-btn {
+        background-color: #254bf6;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        /* It will make cursor a pointer when we hover on button  */
+      }
+      .nav2 {
+        /* border: 2px solid red ("only used to see area we are adding css to") */
+        background-color: #03643c;
+        width: 200px;
+        padding: 20px;
+        /* text-align: center "Optional"; */
+      }
+      .nav2 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav2 li {
+        margin-bottom: 12px;
+      }
+      .nav2 a {
+        text-decoration: none;
+        color: #fff;
+        display: block; 
+        /* conversion to block will help us in hover as it will highlight whole block rather than just text  */
+        padding: 10px;
+        width: 100%;
+      }
+      .nav2 a:hover {
+        background-color: #137e0a;
+      }
+      .nav2 .login-btn {
+        background-color: #048a2f;
+        color: #fff;
+        border: none;
+        width: 100%;
+        /* This width is width of nav2 tag */
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      /* .nav2 .login-btn:hover{
+        background-color: rgb(172, 254, 9);
+        border: 1px solid white
+      } */
+
+      
+      .nav3 {
+        background-color: #45a2bb;
+        padding: 10px;
+      }
+      .nav3 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: block;
+      }
+      .nav3 .dropdown-content {
+        display: none;
+      }
+
+      .nav3 .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: #3e3e3e;
+        min-width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <h2>Variation 1: Horizontal with underline effect</h2>
+      <nav class="nav1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-container">
+      <h2>Variation 2: Vertical with hover effect</h2>
+      <nav class="nav2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+        <button class="login-btn">Login</button>
+      </nav>
+    </div>
+
+    <div class="nav-container">
+      <h2>Variation 3: Horizontal with dropdown</h2>
+      <nav class="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
