@@ -1,0 +1,25 @@
+
+Projects are the only way to learn CSS
+
+Browser injects its initial margin and and padding by default so we have to set it to 0px
+
+Flex box is a display property which make element moving very easy and fast
+1st property in it is viewport height: height = 100vh & also set justify-content & align-items to center
+
+Note: Flex property works on parent alement ie if we want to add flex property to form we will add flex to body
+eg:  form {
+    display: flex;
+    flex-direction: column;} //It will change column default direction
+
+
+
+imp. Properties:
+01. Border-Radius
+02. Margin means outer space
+03. while padding means inner breathable space
+
+                 
+                 
+                 
+                 
+                 **********NOTHING WAS WRITTEN HERE***********
